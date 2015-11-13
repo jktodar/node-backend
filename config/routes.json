@@ -1,0 +1,15 @@
+{
+  "main": [
+    {"verb": "get", "path": "/", "action": "index"}
+  ],
+  "shirts": [
+    {"verb": "get", "path": "/api/shirts", "action": "find"},
+    {"verb": "get", "path": "/api/shirts/:id", "action": "findOne"},
+    {"verb": "put", "path": "/api/shirts/:id", "action": "update"}
+  ],
+  "shorts": [
+    {"verb": "get", "path": "/api/shorts", "action": "find"},
+    {"verb": "get", "path": "/api/shorts/:id", "action": "findOne"},
+    {"verb": "put", "path": "/api/shorts/:id", "action": "update"}
+  ]
+}
