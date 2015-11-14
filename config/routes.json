@@ -11,5 +11,9 @@
     {"verb": "get", "path": "/api/shorts", "action": "find"},
     {"verb": "get", "path": "/api/shorts/:id", "action": "findOne"},
     {"verb": "put", "path": "/api/shorts/:id", "action": "update"}
+  ],
+  "hoodies": [
+    {"verb": "get", "path": "/api/hoodies", "action": "find"}
+    
   ]
 }

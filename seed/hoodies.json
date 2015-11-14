@@ -1,0 +1,13 @@
+[{
+  "name": "Men's Hoodie", "size": "XL", "color": "Gray", "style": "pullover", "cost": "25.00"
+}, {
+  "name": "Men's Hoodie", "size": "L", "color": "Black", "style": "pullover", "cost": "25.00"
+}, {
+  "name": "Men's Hoodie", "size": "M", "color": "Blue", "style": "zipup", "cost": "25.00"
+}, {
+  "name": "Women's Hoodie", "size": "XL", "color": "Gray", "style": "zipup", "cost": "25.00"
+}, {
+  "name": "Women's Hoodie", "size": "L", "color": "Black", "style": "zipup", "cost": "25.00"
+}, {
+  "name": "Women's Hoodie", "size": "M", "color": "Blue", "style": "pullover", "cost": "25.00"
+}]

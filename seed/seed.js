@@ -54,6 +54,7 @@ Seed.prototype.init_ = function() {
     self.dbc = app.get('mongo');
     self.shirtsCollection = self.dbc.collection('shirts');
     self.shortsCollection = self.dbc.collection('shorts');
+    self.hoodiesCollection = self.dbc.collection('hoodies');
 
     // Drop current collections.
     self.shirtsCollection.drop(function(err, result) {
@@ -64,9 +65,13 @@ Seed.prototype.init_ = function() {
           // Seed the shorts.
           console.info('Seeding Shorts...');
           self.seedShorts(function() {
-            // Perform the final task and exit.
-            console.info('Seeding complete!!!');
-            process.exit(1);
+            // Seed the hoodies.
+            console.info('Seeding Hoodies...');
+            self.seedHoodies(function() {
+              // Perform the final task and exit.
+              console.info('Seeding complete!!!');
+              process.exit(1);
+            });
           });
         });
       });
@@ -109,12 +114,34 @@ Seed.prototype.seedShorts = function(done) {
     // Handle any errors.
     handleError(err);
 
-    // Set the short IDs.
-    self.shortIDs = results && results.insertedIds ?
+    // Set the shorts IDs.
+    self.shortsIDs = results && results.insertedIds ?
         results.insertedIds : [];
 
     // Move to the next step.
     done()
+  });
+};
+
+
+/**
+ * Seeds the hoodies from the hoodies.json file.
+ * @param {!Function} done The callback to fire when done.
+ */
+Seed.prototype.seedHoodies = function(done) {
+  var self = this,
+      hoodies = require('./hoodies.json');
+
+  self.hoodiesCollection.insertMany(hoodies, function(err, results) {
+    // Handle any errors.
+    handleError(err);
+
+    // Set the hoodies IDs.
+    self.hoodiesID = results && results.insertedIds ? 
+        results.insertedIds : [];
+
+    // Move to the next step.
+    done();
   });
 };
 

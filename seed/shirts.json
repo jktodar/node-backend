@@ -1,13 +1,13 @@
 [{
-  "name": "Men's Red XL"
+  "name": "Men's Tank", "size": "XL", "color": "Red", "style": "tank", "cost": "15.00"
 }, {
-  "name": "Men's Red L"
+  "name": "Men's Tank", "size": "L", "color": "Black", "style": "tank", "cost": "15.00"
 }, {
-  "name": "Men's Red M"
+  "name": "Men's Tank", "size": "M", "color": "Blue", "style": "tank", "cost": "15.00"
 }, {
-  "name": "Women's Red XL"
+  "name": "Women's Tank", "size": "XL", "color": "Red", "style": "tank", "cost": "15.00"
 }, {
-  "name": "Women's Red L"
+  "name": "Women's Tank", "size": "L", "color": "Black", "style": "tank", "cost": "15.00"
 }, {
-  "name": "Women's Red M"
+  "name": "Women's Tank", "size": "M", "color": "Blue", "style": "tank", "cost": "15.00"
 }]

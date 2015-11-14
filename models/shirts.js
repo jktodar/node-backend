@@ -1,8 +1,8 @@
 /**
  * Expose the Shirts Model.
  */
-module.exports = Shirts;
 
+module.exports = Shirts;
 
 
 /**

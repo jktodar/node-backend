@@ -1,13 +1,13 @@
 [{
-  "name": "Men's Black XL"
+  "name": "Men's Shorts", "size": "XL", "color": "Red", "style": "running", "cost": "15.00"
 }, {
-  "name": "Men's Black L"
+  "name": "Men's Shorts", "size": "L", "color": "Black", "style": "running", "cost": "15.00"
 }, {
-  "name": "Men's Black M"
+  "name": "Men's Shorts", "size": "M", "color": "Blue", "style": "running", "cost": "15.00"
 }, {
-  "name": "Women's Black XL"
+  "name": "Women's Shorts", "size": "XL", "color": "Red", "style": "running", "cost": "15.00"
 }, {
-  "name": "Women's Black L"
+  "name": "Women's Shorts", "size": "L", "color": "Black", "style": "leggings", "cost": "15.00"
 }, {
-  "name": "Women's Black M"
+  "name": "Women's Shorts", "size": "M", "color": "Blue", "style": "leggings", "cost": "15.00"
 }]
